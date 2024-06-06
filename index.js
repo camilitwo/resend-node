@@ -7,6 +7,10 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+    res.send('La aplicación está funcionando');
+});
+
 app.post('/send-email', async (req, res) => {
     const { nombre, telefono, email, mensaje } = req.body;
 
