@@ -9,7 +9,7 @@
     "routes": [
       {
         "src": "/send-email",
-        "dest": "/server.js",
+        "dest": "/index.js",
         "methods": ["POST", "OPTIONS"],
         "headers": {
           "Access-Control-Allow-Origin": "*",
